@@ -65,9 +65,9 @@ class Api extends CI_Controller {
 
 	function update()
 	{
-		$this->form_validation->set_rules('nama', 'First Name', 'required');
+		$this->form_validation->set_rules('nama', 'nama', 'required');
 
-		$this->form_validation->set_rules('harga', 'Last Name', 'required');
+		$this->form_validation->set_rules('harga', 'harga', 'required');
 		if($this->form_validation->run())
 		{	
 			$data = array(
